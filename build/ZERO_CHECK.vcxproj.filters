@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Assignment\4th Sem\Theory of automata\RegXplorer\build\CMakeFiles\25f8b61efeba941b40bba3fa3dfd535c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{17F121B9-6EEA-37EF-8E56-FABBC5EEECF0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

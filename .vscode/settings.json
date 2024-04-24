@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.ipynb": "python",
+        "regex": "cpp",
+        "xutility": "cpp"
+    }
+}

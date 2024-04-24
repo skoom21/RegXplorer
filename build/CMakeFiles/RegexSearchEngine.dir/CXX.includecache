@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/regex_search_engine.h
+regex
+-
+string
+-
+vector
+-
+
+/mnt/d/Assignment/4th Sem/Theory of automata/RegXplorer/src/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+regex_search_engine.h
+/mnt/d/Assignment/4th Sem/Theory of automata/RegXplorer/src/regex_search_engine.h
+

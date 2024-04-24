@@ -1,0 +1,3 @@
+/mnt/d/Assignment/4th Sem/Theory of automata/RegXplorer/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/Assignment/4th Sem/Theory of automata/RegXplorer/build/CMakeFiles/edit_cache.dir
+/mnt/d/Assignment/4th Sem/Theory of automata/RegXplorer/build/CMakeFiles/RegexSearchEngine.dir
