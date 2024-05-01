@@ -7,11 +7,11 @@
 #IncludeRegexTransform: 
 
 ../include/regex_search_engine.h
-regex
--
 string
 -
 vector
+-
+stack
 -
 
 /mnt/d/Assignment/4th Sem/Theory of automata/RegXplorer/src/main.cpp

@@ -18,5 +18,5 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 
 # Set output directory for executable
 set_target_properties(${PROJECT_NAME} PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${CMAKE    _CURRENT_SOURCE_DIR}/bin
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin
 )

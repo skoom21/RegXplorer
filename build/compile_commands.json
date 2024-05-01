@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/Assignment/4th Sem/Theory of automata/RegXplorer/build",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/RegexSearchEngine.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/RegexSearchEngine.dir/src/main.cpp.obj -c \"D:/Assignment/4th Sem/Theory of automata/RegXplorer/src/main.cpp\"",
+  "file": "D:/Assignment/4th Sem/Theory of automata/RegXplorer/src/main.cpp",
+  "output": "CMakeFiles/RegexSearchEngine.dir/src/main.cpp.obj"
+}
+]
