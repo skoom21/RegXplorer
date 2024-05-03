@@ -1,6 +1,6 @@
 # Regexplorer
 
-<img src="./image\generate-a-logo-for-our-project-named-rege-plorer--0r0yfu5oQpWdm9Twwkfhxg-cU4TANVeQjSNQRzyFIrYSQ-removebg-preview.png" align="right" width="256" height="256" style="margin: 0 10px">
+<img src="./image/logo.bmp" align="right" width="256" height="256" style="margin: 0 10px">
 
 Welcome to Regexplorer! Regexplorer is a regular expression-based text search engine implemented in C++. It allows users to search for specific patterns within a text document using regular expressions.
 
