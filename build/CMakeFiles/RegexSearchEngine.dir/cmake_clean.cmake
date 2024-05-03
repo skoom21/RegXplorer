@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RegexSearchEngine.dir/src/main.cpp.obj"
-  "CMakeFiles/RegexSearchEngine.dir/src/main.cpp.obj.d"
-  "D:/Assignment/4th Sem/Theory of automata/RegXplorer/bin/RegexSearchEngine.exe"
-  "D:/Assignment/4th Sem/Theory of automata/RegXplorer/bin/RegexSearchEngine.exe.manifest"
-  "D:/Assignment/4th Sem/Theory of automata/RegXplorer/bin/RegexSearchEngine.pdb"
-  "libRegexSearchEngine.dll.a"
+  "CMakeFiles/RegexSearchEngine.dir/src/gui/main_window.cpp.o"
+  "CMakeFiles/RegexSearchEngine.dir/src/main.cpp.o"
+  "bin/RegexSearchEngine"
+  "bin/RegexSearchEngine.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
