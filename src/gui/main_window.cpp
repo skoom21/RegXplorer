@@ -39,7 +39,11 @@ MainWindow::MainWindow(int w, int h, const char* title)
     browseButton->color(0x4A90E2); // Blue color
     searchButton->color(0x4A90E2); // Blue color
 
-    // Attach text buffer to text display widget
+    // Set button shape to rounded
+    browseButton->box(FL_ROUND_UP_BOX);
+    searchButton->box(FL_ROUND_UP_BOX);
+
+    // Attach text buffer to text display widgetw
     textDisplay->buffer(textBuffer);  
 
     // Schedule transition to main page after a delay (e.g., 3 seconds)
@@ -53,28 +57,30 @@ MainWindow::MainWindow(int w, int h, const char* title)
     end();
 }
 
+
+
 void MainWindow::searchButtonCallback(Fl_Widget* widget, void* data) {
     MainWindow* mainWindow = static_cast<MainWindow*>(data);
-    const char* pattern = mainWindow->regexInput->value(); // Get the regex pattern from input field
+    std::string pattern = mainWindow->regexInput->value(); // Get the regex pattern from input field
     std::string text = mainWindow->textBuffer->text(); // Get the text to search from the text buffer
+    // Filter the text: remove new lines and periods
+    // text.erase(std::remove(text.begin(), text.end(), '.'), text.end());
+    // text.erase(std::remove(text.begin(), text.end(), '\n'), text.end());
 
     // Create an instance of RegexSearchEngine with the pattern
-    RegexSearchEngine regexEngine(pattern);
+    Regex regexEngine(pattern);
     // Search for matches in the text
-    bool matchFound = regexEngine.search(text);
-    std::vector<std::string> matches = regexEngine.matches;
+    std::vector<int> matches = regexEngine.get_matches(text);
 
-    if (matchFound) {
-        mainWindow->textBuffer->text(""); // Clear the text buffer
-        for (const std::string& match : matches) {
-            mainWindow->textBuffer->append(match.c_str()); // Append each match to the text buffer
-            mainWindow->textBuffer->append("\n"); // Add a newline after each match
-        }
-    } else {
-        // If no matches found, display a message
-        mainWindow->textBuffer->text("No matches found.");
+    //replace the buffer text with the matches found by adding [] at the indexes that are in the matches and then highlight_style(FL_RED, '[');
+    std::string newText = text;
+    for (int matchIndex : matches) {
+        newText.insert(matchIndex, "[");
+        newText.insert(matchIndex + pattern.size() + 1, "]");
     }
+    mainWindow->textBuffer->text(newText.c_str());
 }
+
 
 void MainWindow::browseButtonCallback(Fl_Widget* widget, void* data) {
     MainWindow* mainWindow = static_cast<MainWindow*>(data);

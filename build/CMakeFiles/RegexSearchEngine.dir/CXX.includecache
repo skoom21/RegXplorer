@@ -7,13 +7,23 @@
 #IncludeRegexTransform: 
 
 ../include/regex_search_engine.h
-string
--
 vector
+-
+deque
+-
+iostream
+-
+sstream
+-
+map
+-
+set
+-
+unordered_set
 -
 stack
 -
-iostream
+algorithm
 -
 
 /mnt/d/Assignment/4th Sem/Theory of automata/RegXplorer/src/gui/main_window.cpp
@@ -40,6 +50,8 @@ FL/Fl_Button.H
 FL/Fl_Text_Display.H
 -
 FL/Fl_Box.H
+-
+FL/Fl_Text_Buffer.H
 -
 FL/Fl_File_Chooser.H
 -

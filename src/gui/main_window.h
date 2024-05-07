@@ -7,6 +7,7 @@
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Box.H>
+#include <FL/Fl_Text_Buffer.H>
 #include <FL/Fl_File_Chooser.H> // Include Fl_File_Chooser header
 
 class MainWindow : public Fl_Window {

@@ -70,6 +70,12 @@
         "numeric": "cpp",
         "random": "cpp",
         "string_view": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "xhash": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "unordered_set": "cpp",
+        "xtree": "cpp",
+        "set": "cpp"
     }
 }
