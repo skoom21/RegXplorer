@@ -51,8 +51,6 @@ FL/Fl_Text_Display.H
 -
 FL/Fl_Box.H
 -
-FL/Fl_Text_Buffer.H
--
 FL/Fl_File_Chooser.H
 -
 

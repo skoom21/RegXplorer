@@ -11,12 +11,10 @@
 #include <stack>
 #include <algorithm>
 
-// #define DEBUG
-// #define CACHING
 
 static int current_state_id = 0;
 
-// Define a iostream for debugging purposes
+
 class DebugStream : public std::ostream
 {
 public:

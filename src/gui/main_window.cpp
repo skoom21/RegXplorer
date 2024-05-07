@@ -13,11 +13,14 @@ MainWindow::MainWindow(int w, int h, const char* title)
       textDisplay(new Fl_Text_Display(w * 0.1, h * 0.3, w * 0.8, h * 0.5, "File Contents")),
       logoBox(new Fl_Box(0, 0, w, h)) {
 
-    // Set background color to black
-    color(FL_BLACK);
+    // Set background color to a dark gray
+    color(FL_DARK_CYAN);
 
     // Load and display your logo image
-    logoBox->image(new Fl_PNG_Image("logo.png"));
+    logoBox->image(new Fl_PNG_Image("../logo.png"));
+    logoBox->box(FL_UP_BOX); // Add a border around the logo
+    logoBox->labelfont(FL_HELVETICA_BOLD); // Set font to bold Helvetica
+    logoBox->labelsize(h * 0.05); // Set font size
 
     // Set text color to white
     int fontSize = h * 0.03;
@@ -43,7 +46,7 @@ MainWindow::MainWindow(int w, int h, const char* title)
     browseButton->box(FL_ROUND_UP_BOX);
     searchButton->box(FL_ROUND_UP_BOX);
 
-    // Attach text buffer to text display widgetw
+    // Attach text buffer to text display widget
     textDisplay->buffer(textBuffer);  
 
     // Schedule transition to main page after a delay (e.g., 3 seconds)
@@ -56,7 +59,6 @@ MainWindow::MainWindow(int w, int h, const char* title)
     show();
     end();
 }
-
 
 
 void MainWindow::searchButtonCallback(Fl_Widget* widget, void* data) {
@@ -79,6 +81,7 @@ void MainWindow::searchButtonCallback(Fl_Widget* widget, void* data) {
         newText.insert(matchIndex + pattern.size() + 1, "]");
     }
     mainWindow->textBuffer->text(newText.c_str());
+
 }
 
 
@@ -109,7 +112,7 @@ void MainWindow::timeoutCallback(void* data) {
     // Fade out the logo by changing the opacity gradually
     for (int i = 255; i >= 0; i -= 5) {
         mainWindow->logoBox->color(FL_BLACK, i); // Set the opacity
-        Fl::wait(0.5); // Wait for a small amount of time
+        Fl::wait(0.05); // Wait for a small amount of time
         Fl::check(); // Process pending events
     }
 
